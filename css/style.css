@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "NanumGothic", "Noto Sans CJK KR", "Poppins";
+}
+
+#top {
+  width: 100%;
+  margin: 0 auto;
+  height: 40rem;
+  background-image: url(../img/main_bg3_20230627.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#header {
+  width: 60%; /*약 1200px*/
+  height: 95px;
+  margin: 0 auto;
+  padding: 27px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .right {
+  display: flex;
+  align-items: center;
+  color: #555;
+  letter-spacing: -0.3px;
+}
+#header .right .first {
+  display: flex;
+  font-size: 14.88px;
+}
+#header .right .first li {
+  margin: 0 12.5px;
+}
+#header .right .first li:first-child {
+  margin-left: 0px;
+}
+#header .right .first li:last-child {
+  margin-right: 0px;
+}
+#header .right.second {
+  background-color: #056dae;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  padding: 7px 10px;
+  margin: 0 30px;
+  border: none;
+  border-radius: 5px;
+}
+#header .right.second svg {
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+}
+#header .right.second p {
+  display: inline-block;
+}
+#header .right.last {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-size: 13px;
+  font-weight: 400;
+}
+#header .right.last li {
+  padding: 0 2px;
+}
+#header .right.last li.bar {
+  color: #cecece;
+}
+#header .right.last li:last-child {
+  padding-left: 8px;
+  padding-top: 3px;
+}
+#main {
+  width: 60%;
+  margin: 0 auto;
+  padding: 150px 0 0;
+  color: #fff;
+}
+#main span{
+  font-family: "Poppins";
+  font-size: 62px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 80.6px; /* 130% */
+}
+#main strong{
+  font-size: 62px;
+  color: #fff;
+  font-weight: 700;
+}
+#main .blue {
+  color: #056dae;
+  font-weight: 700;
+}
+#main p {
+  color: #fff;
+  font-family: "Noto Sans CJK KR";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 27px; /* 180% */
+}
