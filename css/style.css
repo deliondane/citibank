@@ -12,21 +12,29 @@ a {
   color: inherit;
 }
 body {
-  font-family: "NanumGothic", "Noto Sans CJK KR", "Poppins";
+  font-family: "SF pro", "Noto Sans CJK KR", "Poppins";
 }
 
 #top {
   width: 100%;
   margin: 0 auto;
   height: 40rem;
-  background-image: url(../img/main_bg3_20230627.jpg);
+  position: relative;
+}
+
+#background{
+  width: 100%;
+  margin: 0 auto;
+  height: 40rem;
+  background-image: url(../img/1.png);
+  opacity: 1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
 }
+
 #header {
-  width: 60%; /*약 1200px*/
+  width: 75%; /*1440px*/
   height: 95px;
   margin: 0 auto;
   padding: 27px 25px;
@@ -44,13 +52,15 @@ body {
   display: flex;
   font-size: 14.88px;
 }
-#header .right .first li {
+#header .right .first > li {
   margin: 0 12.5px;
+  letter-spacing: 1px;
+  color: #fff;
 }
-#header .right .first li:first-child {
+#header .right .first > li:first-child {
   margin-left: 0px;
 }
-#header .right .first li:last-child {
+#header .right .first > li:last-child {
   margin-right: 0px;
 }
 #header .right.second {
@@ -62,6 +72,7 @@ body {
   margin: 0 30px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 #header .right.second svg {
   width: 17px;
@@ -72,30 +83,32 @@ body {
   display: inline-block;
 }
 #header .right.last {
+  width: auto;
   display: flex;
   align-items: center;
   color: #555;
   font-size: 13px;
   font-weight: 400;
+  letter-spacing: 0.3px;
 }
 #header .right.last li {
   padding: 0 2px;
 }
-#header .right.last li.bar {
-  color: #cecece;
+#header .right.last li.slash {
+  color: #555;
 }
 #header .right.last li:last-child {
   padding-left: 8px;
   padding-top: 3px;
 }
 #main {
-  width: 60%;
+  width: 75%; /*1440px*/
   margin: 0 auto;
-  padding: 150px 0 0;
+  padding: 150px 0 80px;
   color: #fff;
 }
 #main span{
-  font-family: "Poppins";
+  font-family: "SF pro";
   font-size: 62px;
   font-weight: 300;
   font-style: normal;
@@ -112,9 +125,37 @@ body {
 }
 #main p {
   color: #fff;
-  font-family: "Noto Sans CJK KR";
+  font-family: "SF pro";
   font-size: 15px;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 300;
   line-height: 27px; /* 180% */
+}
+
+#background .bar{
+  width: 75%;
+  height: 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#background .bar > li{
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  opacity: 50%;
+  cursor: pointer;
+  transition: all ease;
+}
+#background .bar > li.on{
+  opacity: 1;
+}
+
+
+
+/*FloatNav*/
+#floatNav{
+  width: 75%; /*1440px*/
+  
 }
